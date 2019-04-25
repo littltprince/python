@@ -13,7 +13,7 @@ height=float(input('请输入身高(m)：'))
 weight=float(input('请输入体重(kg)：'))
 bmi=weight/(height*height)
 if bmi <18.5:
-    print( '过轻')
+    print('您的BMI值为', '%.2f' % (bmi), '太轻了')
 elif bmi >=18.5 and bmi <25:
     print('正常')
 elif bmi>=25 and bmi <28:
