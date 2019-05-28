@@ -28,7 +28,36 @@
 #         s=s*x
 #     return s
 # print(power(2))
-def login(name,gender):
-    print('name',name)
-    print('gender',gender)
-login('a','a')
+# '''默认参数'''
+# def login(name,gender,city='上海'):
+#     print('name',name)
+#     print('gender',gender)
+#     print('city',city)
+# login('a','a')
+# '''参数可变的函数，例如计算a**2+b**2+C**2+...'''
+# def value(*numbers):
+#     sum=0
+#     for n in numbers:
+#         sum=sum+n*n
+#     return sum
+# # print(value(1,2,3))
+# '''自定义的可变参数'''
+#
+# def person(age,name,**kw):
+#     kw = ['city:','beijing','country:','china']
+#     print('age:',age,'name:',name,'other:',kw)
+# person(12,'fuas')
+'''递归函数'''
+def fact(m):
+    return fact_1(m,1)
+def fact_1(num,product):
+    if num==1:
+        return product
+    return fact_1(num-1,num*product)
+# print(fact(10))
+
+def facy(n):
+    if n==1:
+        return 1
+    return n*facy(n-1)
+print(facy(4))
